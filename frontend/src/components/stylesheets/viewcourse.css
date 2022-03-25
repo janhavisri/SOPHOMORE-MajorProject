@@ -1,0 +1,116 @@
+    .p-5 {
+        will-change: transform;
+        transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    }
+    
+    hr {
+        margin-left: 120px;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    user agent stylesheet div {
+        display: block;
+    }
+    
+    .text-light {
+        color: #f8f9fa!important;
+    }
+    
+    body {
+        background-color: #fff;
+        color: #fff;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .h {
+        text-align: center;
+        font: bold;
+        margin-top: 20px;
+    }
+    
+    .img {
+        margin-left: 30px;
+        width: 90px;
+    }
+    
+    .imga {
+        margin-left: 230px;
+        width: 90px;
+        margin-top: -190px;
+    }
+    
+    .p {
+        margin-top: -65px;
+        margin-left: 43px;
+    }
+    
+    .imgag {
+        margin-left: 420px;
+        width: 90px;
+        margin-top: -180px;
+    }
+    
+    .pa {
+        margin-top: -65px;
+        margin-left: 395px;
+    }
+    
+    .imgage {
+        margin-left: 600px;
+        width: 80px;
+        margin-top: -180px;
+    }
+    
+    .paa {
+        margin-top: -65px;
+        margin-left: 555px;
+    }
+    
+    .imgages {
+        margin-left: 790px;
+        width: 80px;
+        margin-top: -180px;
+    }
+    
+    .paaa {
+        margin-top: -65px;
+        margin-left: 745px;
+    }
+    
+    .imgagess {
+        margin-left: 980px;
+        width: 80px;
+        margin-top: -180px;
+    }
+    
+    .paaaa {
+        margin-top: -65px;
+        margin-left: 955px;
+    }

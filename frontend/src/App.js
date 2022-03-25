@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import "./App.css";
 import Admin from "./components/admin";
 import Dashboard from "./components/admin/dashboard";
@@ -10,7 +10,8 @@ import Signup from "./components/main/signup";
 import Login from "./components/main/login";
 import Home from "./components/main/home";
 import Header from "./components/main/header";
-//import ListCourses from "./components/main/listCourses";
+import CourseDetail from "./components/main/coursedetail";
+import ViewCourse from "./components/main/viewcourse";
 import User from "./components/user";
 import UserDashboard from "./components/user/userdashboard";
 //import { CoursesProvider } from "./coursesContext";
@@ -33,17 +34,22 @@ function App() {
             <Route element={<Login />} path="login" />
             <Route element={<Home />} path="home" />
             <Route element={<Header />} path="header" />
+            <Route element={<CourseDetail />} path="coursedetail" />
+            <Route element={<ViewCourse />} path="viewcourse" />
             {/* <Route element={<ListCourses/>} path="listCourses"/> */}
           </Route>
           <Route element={<User />} path="user">
             <Route element={<UserDashboard />} path="userdashboard" />
           </Route>
+          {/* <Route exact path="/">
+            <Navigate to="/home"></Navigate>
+          </Route> */}
+          <Route path="/" element={<Navigate replace to="/home" />} />
 
           {/* </CoursesProvider> */}
-          {/* <Route exact path="/">
-            <Redirect to="/home" />
-          </Route> */}
+
         </Routes>
+        
       </BrowserRouter>
     </div>
   );

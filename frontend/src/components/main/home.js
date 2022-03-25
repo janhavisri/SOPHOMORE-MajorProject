@@ -21,7 +21,7 @@ const Home = () => {
         <h3 class="lead mb-1">Childrens' minds are like a parachute.</h3>
         <h3 class="lead mb-1">They function only when they open.</h3>
         <div class="d-flex flex-column flex-md-row">
-        <a href="http://localhost:3000/" class="btn btn-lg btn-bd-primary mb-3 me-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Signup</a>
+        {/* <a href="http://localhost:3000/" class="btn btn-lg btn-bd-primary mb-3 me-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Signup</a> */}
           
           <a href="http://localhost:3000/main/signup" class="btn btn-lg btn-bd-primary mb-3 me-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Signup</a>
           <a href="http://localhost:3000/main/login"class="btn btn-lg btn-outline-secondary mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download 5.1.3');">Login</a>

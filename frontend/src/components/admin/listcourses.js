@@ -8,7 +8,7 @@ import {
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import app_config from "../../config";
-import { CoursesContext } from "../../coursesContext";
+import { coursesContext } from "../../coursesContext";
 
 const CoursesDetail = (props) => {
   const url = app_config.api_url;
