@@ -4,6 +4,32 @@
         transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
     }
     
+    .bg-danger {
+        background-color: #dc3545!important;
+    }
+    
+    .text-light {
+        color: #f8f9fa!important;
+    }
+    
+    .text-cente {
+        text-align: center!important;
+        padding-top: 180px;
+        /* margin-bottom: 20px */
+    }
+    
+    .container-flui {
+        width: 204%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    h1 {
+        /* padding-top: 10px; */
+        justify-content: center;
+        /* margin-top: 50px; */
+    }
+    
     hr {
         margin-left: 120px;
     }

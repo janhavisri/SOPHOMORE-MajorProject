@@ -1,5 +1,6 @@
 
  import "../stylesheets/signup.css";
+ import "../stylesheets/addcourse.css";
  import * as React from 'react';
  //import Avatar from '@mui/material/Avatar';
  import Button from '@mui/material/Button';
@@ -91,11 +92,11 @@
        sx={{
          display: 'flex',
          flexWrap: 'wrap',
-         mx:'330px',
+         mx:'320px',
          '& > :not(style)': {
         //    m: 20,
-           width: 900,
-           height: 730,
+           width: 1000,
+           height: 680,
          },
        }}
      >
@@ -106,6 +107,7 @@
            {/* <Avatar sx={{ m: 5,mx:40, bgcolor: 'secondary.main' }}> */}
              {/* <LockOutlinedIcon /> */}
            {/* </Avatar> */}
+           <h1 className="add"> Add Courses</h1>
            <TextField
                   className="w-100 mt-4"
                   label="Title"
@@ -134,10 +136,10 @@
                   value={values.thumbnail}
                ></TextField>
                 <input
-                // className="w-80 mt-4"
+              
                   // onChange={uploadheroimage}
                   type="file"
-                  className="form-control mt-4 mx-1"
+                  className="form-control mt-4 mx-0"
                   title="Select heroimage"
                 required/>
                 <TextField
@@ -161,7 +163,7 @@
                type="submit"
                variant="contained"
              id="pp"
-               sx={{  mt: 5, mb: 0 }}
+               sx={{  mt: 5, mb: 0,  }}
              >
                Add
              </Button>

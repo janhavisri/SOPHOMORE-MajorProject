@@ -1,6 +1,6 @@
 .video {
     padding-bottom: 80px;
-    margin-left: 160px;
+    /* margin-left: 0px; */
 }
 
 .bg-danger {
@@ -36,7 +36,7 @@ h1 {
 .register-photo .image-holder {
     display: table-cell;
     width: auto;
-    background: url(https://i.imgur.com/Fqm9rWL.jpg);
+    background: url(https://www.whizara.com/wp-content/uploads/2021/06/Java_Programming_for_Kids_and_Teens-1024x726.jpg);
     background-size: cover
 }
 
@@ -131,7 +131,7 @@ h1 {
 .photo .image {
     display: table-cell;
     width: auto;
-    background: url(https://i.imgur.com/Fqm9rWL.jpg);
+    background: url(https://www.whizara.com/wp-content/uploads/2021/06/Python_Programming_for_Kids-1.jpg);
     background-size: cover;
 }
 
@@ -217,4 +217,76 @@ h1 {
     width: auto;
     background: url(https://omggamer.com/wp-content/uploads/2021/06/10-Programming-Languages-for-Game-Development-e1622712606533-1536x868.jpeg);
     background-size: cover;
+}
+
+.color {
+    color: orange
+}
+
+.h2 {
+    margin-top: 60px;
+    margin-left: -80px;
+}
+
+.ig {
+    margin-left: -70px;
+    margin-bottom: -50px
+}
+
+.src {
+    margin-left: 600px;
+    margin-top: -400px
+}
+
+.Stats {
+    margin-top: 60px
+}
+
+.Stats_b2 {
+    font-size: 20px;
+}
+
+.stt {
+    margin-left: 400px;
+    margin-top: -130px;
+}
+
+.Stat {
+    font-size: 20px;
+}
+
+.sttts {
+    margin-top: 60px;
+}
+
+.Stats_b2Variant {
+    font-size: 20px;
+}
+
+.px {
+    margin-left: 400px;
+    margin-top: -130px;
+}
+
+.Stats_b2Variant__PyK99 {
+    font-size: 20px;
+}
+
+.why {
+    margin-left: 25%;
+    margin-top: 50px;
+}
+
+.class {
+    margin-left: 64px;
+    padding-top: 20px;
+}
+
+h6 {
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+.group {
+    margin-left: 35%
 }

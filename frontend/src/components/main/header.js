@@ -24,11 +24,11 @@ export default function Header() {
             Courses
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Game Development</a></li>
-            <li><a class="dropdown-item" href="#">App Development</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/main/viewcourse">Game Development</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/main/viewcourse">App Development</a></li>
             {/* <li><hr class="dropdown-divider"></li> */}
-            <li><a class="dropdown-item" href="#">Java Programmming</a></li>
-            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/main/viewcourse">Java Programmming</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/main/viewcourse">Web Development</a></li>
           </ul>
         </li>
       </ul>

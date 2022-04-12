@@ -12,19 +12,25 @@ import Home from "./components/main/home";
 import Header from "./components/main/header";
 import CourseDetail from "./components/main/coursedetail";
 import ViewCourse from "./components/main/viewcourse";
+import View from "./components/main/view";
 import User from "./components/user";
 import UserDashboard from "./components/user/userdashboard";
-//import { CoursesProvider } from "./coursesContext";
+import { CoursesProvider } from "./coursesContext";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+     
+      <BrowserRouter>   
+      <CoursesProvider>       
+      <Header></Header>
         <Routes>
-          {/* <CoursesProvider> */}
+      
+
           <Route element={<Admin />} path="admin">
             <Route element={<Dashboard />} path="dashboard" />
             <Route element={<AddCourse />} path="addcourse" />
             <Route element={<ViewCourses />} path="viewcourses" />
+            <Route element={<ListCourses />} path="listcourses" />
             {/* <Route element={<Footer/>} path="footer"/> */}
             {/* <Route element={<Header/>} path="header"/>  */}
           </Route>
@@ -36,6 +42,7 @@ function App() {
             <Route element={<Header />} path="header" />
             <Route element={<CourseDetail />} path="coursedetail" />
             <Route element={<ViewCourse />} path="viewcourse" />
+            <Route element={<View />} path="view" />
             {/* <Route element={<ListCourses/>} path="listCourses"/> */}
           </Route>
           <Route element={<User />} path="user">
@@ -43,14 +50,15 @@ function App() {
           </Route>
           {/* <Route exact path="/">
             <Navigate to="/home"></Navigate>
-          </Route> */}
-          <Route path="/" element={<Navigate replace to="/home" />} />
+          </Route>
+          <Route path="/" element={<Navigate replace to="/home" />} /> */}
 
-          {/* </CoursesProvider> */}
+          
 
         </Routes>
-        
+        </CoursesProvider> 
       </BrowserRouter>
+     
     </div>
   );
 }

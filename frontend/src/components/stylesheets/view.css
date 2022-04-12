@@ -1,0 +1,27 @@
+.title {
+    font-size: 50px;
+    /* font-weight: 700; */
+}
+
+.desc {
+    font-size: 23px;
+}
+
+.detail {
+    font-size: 20px;
+}
+
+.thumbnail,
+.Created,
+.valueaddition {
+    padding: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.group {
+    margin-left: -10px;
+}

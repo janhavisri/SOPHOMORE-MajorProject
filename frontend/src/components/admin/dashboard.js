@@ -108,7 +108,7 @@ export default function AdminDashboard() {
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
-              marginRight: '36px',
+              marginRight: '26px',
               ...(open && { display: 'none' }),
             }}
           >

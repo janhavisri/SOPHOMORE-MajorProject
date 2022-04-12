@@ -7,9 +7,11 @@ const ViewCourse =()=> {
 <div class="row">
     <div class="col-sm-6">
         <div class="">
+        <div class="container-flui bg-danger text-light p-5 text-center "><h1>Courses Details</h1></div>
             <div class="p-5"><div>
+            
             <img src="https://softwarelozi.com/wp-content/uploads/2021/01/What-are-Web-development-services.jpg" class="img-fluid" alt="img"/></div></div></div></div><div class="col-sm-6"><div><div class="p-5">
-                <h1 class=" text-center ">Web Development</h1>
+                <h1 class=" text-cente ">Web Development</h1>
                 {/* <h4 class="text-center">Every Developer a basic understanding of HTML, CSS and JAVASCRIPT</h4><h4 class="text-center">Responsive Web Design is used in all types of modern web development</h4><hr/> */}
                 <hr/>
                 <h4 class="text-center">Every Developer a basic understanding of HTML, CSS and JAVASCRIPT</h4><h4 class="text-center">Responsive Web Design is used in all types of modern web development</h4>
@@ -62,7 +64,9 @@ const ViewCourse =()=> {
 </div>
       </Paper>
       </Box>
+      
                 </div>
+                
                 
     )
 };

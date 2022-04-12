@@ -56,22 +56,22 @@ const Home = () => {
                 </div>
                 <div class="col-md-3" >
                     <div class="card text-dark text-center ">
-                        <div class="card-body"><a href="#PythonProgramming" class="nav-link"><i class="fas fa-chart-bar"  aria-hidden="true"></i>&nbsp; Python Programming</a></div>
+                        <div class="card-body"><a href="http://localhost:3000/main/viewcourse" class="nav-link"><i class="fas fa-chart-bar"  aria-hidden="true"></i>&nbsp; Python Programming</a></div>
                     </div>
                 </div>
                 <div class="col-md-3" >
                     <div class="card text-dark text-center ">
-                        <div class="card-body"><a href="#JavaProgramming" class="nav-link" ><i class="fab fa-python" aria-hidden="true"></i>&nbsp; Java Programming</a></div>
+                        <div class="card-body"><a href="http://localhost:3000/main/viewcourse" class="nav-link" ><i class="fab fa-python" aria-hidden="true"></i>&nbsp; Java Programming</a></div>
                     </div>
                 </div>
                 <div class="col-md-3" >
                     <div class="card text-dark text-center ">
-                        <div class="card-body" ><a href="#WebDevelopment" class="nav-link" ><i class="fab fa-python" aria-hidden="true"></i>&nbsp; Web Development</a></div>
+                        <div class="card-body" ><a href="http://localhost:3000/main/viewcourse" class="nav-link" ><i class="fab fa-python" aria-hidden="true"></i>&nbsp; Web Development</a></div>
                     </div>
                 </div>
                 <div class="col-md-3" >
                     <div class="card text-dark text-center ">
-                        <div class="card-body" ><a href="#GameDevelopment" class="nav-link"><i class="devicon-java-plain"></i>&nbsp; Game Development</a>
+                        <div class="card-body" ><a href="http://localhost:3000/main/viewcourse" class="nav-link"><i class="devicon-java-plain"></i>&nbsp; Game Development</a>
                         </div>
                         
                         

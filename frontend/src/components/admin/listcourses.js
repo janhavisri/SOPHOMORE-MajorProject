@@ -8,7 +8,7 @@ import {
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import app_config from "../../config";
-import { coursesContext } from "../../coursesContext";
+import { CoursesContext } from "../../coursesContext";
 
 const CoursesDetail = (props) => {
   const url = app_config.api_url;
@@ -23,11 +23,11 @@ const CoursesDetail = (props) => {
         <h3 className="title">{props.coursesData.title}</h3>
         {/* <p className="text-muted">{props.portfolioData.fullname}</p> */}
         <p className="desc">{props.coursesData.description}</p>
-        <p className="desc">{props.coursesData.thumbnail}</p>
-
+        {/* <p className="desc">{props.coursesData.thumbnail}</p> */}
+        {/* <div className="group"> <a href="http://localhost:3000/main/view" class="btn btn-lg btn-bd-primary mb-3 me-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">View</a></div> */}
         <Button
           component={Link}
-          to={"/viewcourses/" + props.coursesData._id}
+          to={"../view/" + props.coursesData._id}
           variant="contained"
           className="mt-2"
           color="primary"
@@ -42,11 +42,11 @@ const CoursesDetail = (props) => {
 const ListCourses = () => {
   const url = app_config.api_url;
 
-  const [coursesList, setCoursesList] = useState([]);
+  const [coursesList, setCoursesList] = useContext(CoursesContext);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(url + "course/getall")
+    fetch(url + "courses/getall")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
