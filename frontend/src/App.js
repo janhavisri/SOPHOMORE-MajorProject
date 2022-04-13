@@ -39,7 +39,7 @@ function App() {
             <Route element={<Signup />} path="signup" />
             <Route element={<Login />} path="login" />
             <Route element={<Home />} path="home" />
-            <Route element={<Header />} path="header" />
+            {/* <Route element={<Header />} path="header" /> */}
             <Route element={<CourseDetail />} path="coursedetail" />
             <Route element={<ViewCourse />} path="viewcourse" />
             <Route element={<View />} path="view" />

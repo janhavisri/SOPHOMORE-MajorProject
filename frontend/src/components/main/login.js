@@ -50,7 +50,7 @@ const Signup=()=> {
   return (
       <div>
           
-    <Box
+    {/* <Box
       sx={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -63,28 +63,30 @@ const Signup=()=> {
       }}
     >
       
-      <Paper elevation={6} >  
+      <Paper elevation={6} >   */}
       <Box
       sx={{
         display: 'flex',
         flexWrap: 'wrap',
-        mx:'240px',
+        mx:'520px',
         '& > :not(style)': {
           m: 3,
           // mt:3,
-          width: 900,
+          width: 500,
           height: 550,
         },
       }}
     >
       
       <Paper elevation={16} >
+        
       <Formik initialValues={loginform} onSubmit={formSubmit}>
                 {({ values, handleChange, handleSubmit }) => (
                   <form onSubmit={handleSubmit}>
           {/* <Avatar sx={{ m: 5,mx:40, bgcolor: 'secondary.main' }}> */}
       <h1 class="h1">Welcome!</h1>
 <h3 class="h3">SignIn to your account</h3>
+
 <form>
 <div class="form-field">
       <label for="email">Email</label>
@@ -101,14 +103,16 @@ const Signup=()=> {
     <button type="submit" class="login-btn">Login</button>
    
     </div> 
+ 
     </form>
+   
     </form>
                 )}
                 </Formik>
       </Paper>   
      </Box>
-      </Paper>
-    </Box>
+      {/* </Paper>
+    </Box> */}
     
     </div>
     

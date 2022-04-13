@@ -1,46 +1,118 @@
-        /* .div {
+            /* .div {
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin-left: 130px;
             padding-top: 70px;
         }
          */
-        
-        .images {
-            margin-left: 80%;
-            margin-top: 70px;
-        }
-        
-        hr {
-            width: 500px;
-        }
-        
-        .rowmx {
-            margin-top: -350px;
-        }
-        
-        .contain {
-            margin-left: 70%;
-            margin-top: 20px;
-        }
-        
-        .h4 {
-            color: black;
-        }
-        
-        .card-body {
-            padding: 0.4rem !important
-        }
-        
-        .nav-link {
-            color: #ad0000;
-            font-size: 15px;
-            text-align: left
-        }
-        
-        .col-md-3 {
-            padding-bottom: 4px;
-        }
-        
-        Box {
-            background-color: aquamarine;
-        }
+            
+            .images {
+                margin-left: 80%;
+                margin-top: 70px;
+            }
+            
+            hr {
+                width: 500px;
+            }
+            
+            .rowmx {
+                margin-top: -350px;
+            }
+            
+            .contain {
+                margin-left: 70%;
+                margin-top: 20px;
+            }
+            
+            .h4 {
+                color: black;
+            }
+            
+            .card-body {
+                padding: 0.4rem !important
+            }
+            
+            .nav-link {
+                color: #ad0000;
+                font-size: 15px;
+                text-align: left
+            }
+            
+            .col-md-3 {
+                padding-bottom: 4px;
+            }
+            
+            Box {
+                background-color: darkgoldenrod;
+            }
+            
+            .color {
+                color: orange
+            }
+            
+            .h2 {
+                margin-top: 60px;
+                margin-left: 20px;
+            }
+            
+            .ig {
+                margin-left: 20px;
+                margin-bottom: -70px
+            }
+            
+            .src {
+                margin-left: 650px;
+                margin-top: -400px
+            }
+            
+            .Stats {
+                margin-top: 80px
+            }
+            
+            .Stats_b2 {
+                font-size: 20px;
+            }
+            
+            .stt {
+                margin-left: 450px;
+                margin-top: -130px;
+            }
+            
+            .Stat {
+                font-size: 20px;
+            }
+            
+            .sttts {
+                margin-top: 60px;
+            }
+            
+            .Stats_b2Variant {
+                font-size: 20px;
+            }
+            
+            .px {
+                margin-left: 450px;
+                margin-top: -130px;
+            }
+            
+            .Stats_b2Variant__PyK99 {
+                font-size: 20px;
+            }
+            
+            .why {
+                margin-left: 25%;
+                margin-top: 50px;
+            }
+            
+            .class {
+                margin-left: 64px;
+                padding-top: 20px;
+            }
+            
+            h6 {
+                margin-left: 15px;
+                padding-top: 20px;
+            }
+            
+            .group {
+                margin-left: 35%
+            }

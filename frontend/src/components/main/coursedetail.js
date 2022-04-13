@@ -64,16 +64,6 @@ import Button from '@mui/material/Button';
 
 
     </div>
-    <img class="ig"src="https://www.vedantu.com/cdn/images/new-home-page/icons/graph-chart-icon.svg"></img><div class="h2">
-    <h2>Impact, at <strong class="color">Scale</strong> </h2>
-    <h5>Making education affordable and accessible across the globe</h5><hr/>
-
-    <div class="style">
-        <div class="div">
-            <div class="Stats">
-                <h2 class="Stats_">2.1+<br/>crore</h2><p class="Stats_b2">hours of LIVE learning</p></div></div><div class=""><div class="stt"><h2 class="Stats_b2V">10+<br/>lakh</h2><p class="Stat">monthly youtube views</p></div></div><div class="sttts"><div class="Stats_sin"><h2 class="Stats_b2Va"> 25+<br/>lakh</h2><p class="Stats_b2Variant">doubts resolved on the app</p></div></div><div class="px"><div class="Stats_singleStatSection"><h2 class="Stats_b2Variant__">57+<br/>countries</h2><p class="Stats_b2Variant__PyK99">where students take LIVE classes</p></div></div></div>
-                <img class="src"src=" https://www.vedantu.com/cdn/images/new-home-page/B2/stats-map.png"></img>
-    </div>
     
     <h1 class="why">Why SOPHOMORE?</h1>
     <Box

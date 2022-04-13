@@ -6,7 +6,8 @@
     padding-left: 20%;
     color: rgb(2, 96, 247);
     font-size: 60px;
-    margin-top: 50px
+    margin-top: 50px;
+    margin-left: 20px
 }
 
 .h3 {
@@ -14,6 +15,7 @@
     color: rgb(130, 179, 252);
     font-size: 20px;
     margin-top: -5px;
+    margin-left: 10px;
 }
 
 
@@ -88,7 +90,7 @@ input {
     border-bottom: 1px solid #227F5B;
     transition: background 150ms ease-in;
     margin-top: 40px;
-    margin-right: -335px;
+    margin-right: -282px;
 }
 
 .link {
