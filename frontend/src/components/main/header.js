@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './header.css';
+import '../stylesheets/header.css';
 
 
 
