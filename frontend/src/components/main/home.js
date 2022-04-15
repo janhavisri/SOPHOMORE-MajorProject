@@ -20,7 +20,7 @@ const Home = () => {
                                 </h1>
                             <h2 class="my-3">We undertake the responsibility to open these parachutes </h2>
                             <div class="mt-3">
-                                <NavLink to="/" class="btn-get">Get Started</NavLink>
+                                <NavLink to="/" class="btn-get-started">Get Started</NavLink>
                             </div>
                         </div>
                         <div class="col-lg-5 order-1 order-lg-2 header-img">
