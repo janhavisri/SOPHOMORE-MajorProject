@@ -48,28 +48,82 @@ const Home = () => {
                 <h2 class="Stats_">2.1+<br/>crore</h2><p class="Stats_b2">hours of LIVE learning</p></div></div><div class=""><div class="stt"><h2 class="Stats_b2V">10+<br/>lakh</h2><p class="Stat">monthly youtube views</p></div></div><div class="sttts"><div class="Stats_sin"><h2 class="Stats_b2Va"> 25+<br/>lakh</h2><p class="Stats_b2Variant">doubts resolved on the app</p></div></div><div class="px"><div class="Stats_singleStatSection"><h2 class="Stats_b2Variant__">57+<br/>countries</h2><p class="Stats_b2Variant__PyK99">where students take LIVE classes</p></div></div></div>
                 <img class="src"src=" https://www.vedantu.com/cdn/images/new-home-page/B2/stats-map.png"></img>
     </div>
-    
-    <section id ="course" className="d-flex align-items-center">
-    <div class="container-fluid ">
-                <div class="row">
-                    <div class="col-10 mx-auto">
-                        <div class="row">
-                        <div class="col-md-6 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                            
+      <section id ="course" class="center">
+    <h1 class="brand">Our
+    Courses </h1>
+                               
+    <div class="row">
+        
+        <div class="col-md-2 offset-md-1">
+            
+            <div class="card">
+                <img src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Card title 11</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card">
+                <img src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card">
+                <img src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card">
+                <img src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    {/* <section id ="course" className="d-flex align-items-center">
+    <div class="row">
+        <div class="col-md-2 offset-md-1">
+            
+
+              
                                 <h1 class="brand"> Our <strong> Courses</strong>
                                 </h1>
-                                <div class="cards"><div class="md:flex SpCourseTile_single-special-course__26noV items-start" ><div class="block md:hidden SpCourseTile_iconImg__35184 item"><img loading="lazy" src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" alt="special-course"/></div><div class="SpCourseTile_special-course-desc__3bkSm"><div class="SpCourseTile_title__12qhk" >Class 1 - 8</div><h3><a target="_blank" href="https://www.vedantu.com/supercoders?utm_source=Homepage&amp;utm_medium=Special_Course&amp;utm_campaign=Homepage_VarB2&amp;utm_content=Coding_classes">Coding classes</a></h3><p>Learn to build apps and games, be future ready</p><button type="button" class="Button_button__tSJmD Button_button--small__17kTZ      Button_button--black__2njYJ btn-item ">Explore</button></div></div></div>
+                                <div class="col-md-2">
+                                <div class="cards"><div class="md:flex items-start" ><div class="block md:hidden item"><img loading="lazy" src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" alt="special-course"/></div><div class=""><div class="SpCourseTile_title__12qhk" >Class 6 - 12</div><h3><a target="_blank" href="https://www.vedantu.com/supercoders?utm_source=Homepage&amp;utm_medium=Special_Course&amp;utm_campaign=Homepage_VarB2&amp;utm_content=Coding_classes" class="a">Coding classes</a></h3><p>Learn to build apps and games, be future ready</p><button type="button" class="btn-item ">Explore</button></div></div></div>
+                                </div>
+                                <div class="cards">
+                                <div class=""><div class="md:flex items-start " ><div class="block md:hidden item"><img loading="lazy" src="https://www.vedantu.com/cdn/images/new-home-page/B2/coding-classes.svg" alt="special-course"/></div><div class=""><div class="SpCourseTile_title__12qhk" >Class 6 - 12</div><h3><a target="_blank" href="https://www.vedantu.com/supercoders?utm_source=Homepage&amp;utm_medium=Special_Course&amp;utm_campaign=Homepage_VarB2&amp;utm_content=Coding_classes" class="a">Coding classes</a></h3><p>Learn to build apps and games, be future ready</p><button type="button" class=" btn-item ">Explore</button></div></div>
                                 </div>
                                 </div>
                                 </div>
-                                </div>
-                                </div>
-              </section>
+                                {/* </div> */}
+                                {/* </div> */}
+                                {/* </div> */}
+                                {/* </div> */}
+              {/* </section> */} 
     <section id="team">
       
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-9 p-5 mt-2 mb-2">
+            <div class="col-9 p-5 mt-2 mb-4">
                 {/* <h1 data-wow-delay="200ms" class="wow fadeIn text-white about-heading text-center" >
                     Our Team
                 </h1> */}<h2 data-wow-delay="200ms" class="wow fadeIn text-yellow about-heading text-center">Meet <strong class="color">Teachers</strong> </h2>
