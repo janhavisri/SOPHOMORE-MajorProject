@@ -1,18 +1,18 @@
 import * as React from 'react';
 import React, { useState } from "react";
 import { useContext } from "react";
-//import Signup from "../main/signup";
+import Signup from "../main/signup";
 import { Link, NavLink } from "react-router-dom";
-import { coursesContext } from "../coursesContext";
+import { CoursesContext } from "../coursesContext";
 // import './header.css';
 
 const Header= (props)=> {
   const [signupOpen, setSignupOpen] = useState(false);
-   const [coursesList,setCoursesList, loading, setLoading] =useContext(coursesContext);
+   const [coursesList,setCoursesList, loading, setLoading] =useContext(CoursesContext);
    const currentUser = sessionStorage.getItem("user");
    const logout = () =>{
      sessionStorage.removeItem("user");
-     window.location.replace("./login");
+     window.location.replace("/login");
    };
    const showLoggedIn=()=>{
      if (currentUser){
@@ -24,11 +24,16 @@ const Header= (props)=> {
            </Link>
          </li>
          <li className="nav-item">
-           <Link className="nav-link" to=""> </Link> </li>
-           <li className="nav-item">
-             <button onClick={logout} className="btn btn-danger">Logout</button>
-           </li>
-         </>
+           <Link className="nav-links" to="/listcourses">
+             browse courses
+           </Link>
+         </li>
+         <li className="nav-item">
+            <button onClick={logout} className="btn btn-danger">
+              Logout
+            </button>
+          </li>
+        </>
        );
        
      } else {
@@ -81,8 +86,7 @@ const Header= (props)=> {
       </div>
     </nav>
   )   
-
-return (
+  return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">

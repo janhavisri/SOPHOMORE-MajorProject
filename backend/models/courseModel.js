@@ -6,7 +6,7 @@ const schema = new Schema({
     description: String,
     thumbnail: String,
     heroimage: String,
-    created: { type: Date, default: new Date() },
+    created: Date,
     valueAddition: Array
 })
 

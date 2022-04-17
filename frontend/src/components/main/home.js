@@ -3,9 +3,12 @@ import "../stylesheets/home.css";
 //import Paper from '@mui/material/Paper';
 import web from "../../images/girl-and-books.webp";
 import { NavLink } from "react-router-dom";
+import AddCourse from "./addcourse";
+import React, { useState } from "react";
 //import Card from 'react-bootstrap/Card';
 
 const Home = () => {
+    const[addcourseOpen, setOpenAddCourse] = useState(false);
     return (
         <div>
         <section id ="header" className="d-flex align-items-center">
@@ -20,7 +23,19 @@ const Home = () => {
                                 </h1>
                             <h2 class="my-3">We undertake the responsibility to open these parachutes </h2>
                             <div class="mt-3">
-                                <NavLink to="/" class="btn-get-started">Get Started</NavLink>
+                            <NavLink
+        to="/"
+        className="openAddCourse btn-get-started"
+        onClick={() => {
+          setOpenAddCourse(true);
+        }}
+      >
+        Get Started
+      </NavLink>
+      {addcourseOpen && <AddCourse setAddCourseOpen={setOpenAddCourse} />}
+
+                           
+                                {/* <NavLink to="/" class="btn-get-started">Get Started</NavLink> */}
                             </div>
                         </div>
                         <div class="col-lg-5 order-1 order-lg-2 header-img">

@@ -30,7 +30,7 @@ const View = () => {
       return <h1>Loading</h1>;
     } else {
       return (
-        <div className="portview">
+        <div className="view">
           <Container
             style={{
               background: "white",

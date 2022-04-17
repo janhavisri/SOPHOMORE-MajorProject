@@ -20,7 +20,7 @@ router.get('/getall', (req, res) => {
 
     Model.find({})
         .then((data) => {
-            console.log('courses data fetched');
+            console.log('data fetched');
             res.status(200).json(data);
         })
         .catch((err) => {
@@ -33,7 +33,7 @@ router.get('/getbyid/:id', (req, res) => {
 
     Model.findById(req.params.id)
         .then((data) => {
-            console.log('courses fetched by id');
+            console.log('fetched by id');
             res.status(200).json(data);
         })
         .catch((err) => {
@@ -46,7 +46,7 @@ router.delete('/delete/:id', (req, res) => {
 
     Model.findByIdAndDelete(req.params.id)
         .then((data) => {
-            console.log('courses deleted by id');
+            console.log('deleted by id');
             res.status(200).json(data);
         })
         .catch((err) => {

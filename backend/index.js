@@ -7,13 +7,13 @@ const port = process.env.PORT || 5000;
 const cors = require('cors');
 app.use(express.json());
 app.use(cors({ origin: 'http://localhost:3000' }));
-app.use(express.static('uploads'));
+app.use(express.static('./uploads'));
 
 app.use('/user', userRouter);
 app.use('/course', courseRouter);
 app.use('/util', utilRouter);
 
-app.get('/home', (req, res) => {
+app.get('/main/home', (req, res) => {
     console.log('client request on server');
     res.send('Request on home');
 })

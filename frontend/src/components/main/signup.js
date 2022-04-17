@@ -57,18 +57,20 @@ function Signup({ setOpenSignup}){
     
         <div>
         <Box
+
       sx={{
         display: 'flex',
-        flexWrap: 'wrap',
-        mx:'380px',
+        flexDirection: 'column',
+            alignItems: 'center',
+        mx:'340px',
         '& > :not(style)': {
-          m: 17,
+          m: 4,
           width: 700,
           height: 630,
         },
       }}
     >
-  <Paper elevation={16} >
+  <Paper elevation={0.9} >
   <Formik initialValues={signupform} onSubmit={formSubmit}>
                 {({ values, handleChange, handleSubmit }) => (
                   <form onSubmit={handleSubmit}>
@@ -78,9 +80,9 @@ function Signup({ setOpenSignup}){
           {/* <Typography component="h1" variant="h5">
             Sign up
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}> */}
+ // <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}> */}
             <Grid container spacing={5}>
-              <Grid item xs={12} sm={6} >
+              <Grid item xs={10} sm={6} >
                 <TextField
                 className="app"
                   // autoComplete="given-name"
@@ -92,6 +94,7 @@ function Signup({ setOpenSignup}){
                   value={values.firstname}
                   name="firstname"
                   autoComplete="firstname"
+                  autoFocus
                 />
               </Grid>
               
@@ -132,24 +135,24 @@ function Signup({ setOpenSignup}){
                   autoComplete="new-password"
                 />
               </Grid>
-              <Grid item xs={5} mx={4}>
-                <FormControlLabel
+              <Grid item xs={6} mx={4}>
+                <FormControlLabel required
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I accept all Terms and Conditions"
+                  label="I accept all Terms and Conditions" 
                 />
               </Grid>
             </Grid>
             <Button
               type="submit"
+              fullWidth
               variant="contained"
-            id="pp"
-              sx={{ mt: 4, mb: 0 }}
+              sx={{ mt: 3, mb: 2 }}
             >
               Sign Up
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item mx={27}>
-                <Link href="#" variant="body2">
+                <Link href="/main/login" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
@@ -171,4 +174,5 @@ function Signup({ setOpenSignup}){
 
 );
 }
+
 export default Signup;

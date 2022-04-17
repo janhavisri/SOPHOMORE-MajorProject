@@ -1,6 +1,7 @@
                                                             #header {
                                                                 width: 100%;
                                                                 height: 80vh;
+                                                                margin-left: 20px;
                                                                 margin-top: -30px;
                                                             }
                                                             
@@ -40,7 +41,7 @@
                                                             
                                                             .header-img {
                                                                 justify-content: right;
-                                                                margin-left: 100px;
+                                                                margin-left: 140px;
                                                                 margin-top: 70px;
                                                                 width: 30%;
                                                             }
@@ -109,7 +110,7 @@
                                                     } */
                                                             
                                                             .scale {
-                                                                margin-left: 100px;
+                                                                margin-left: 140px;
                                                                 margin-top: 40px;
                                                             }
                                                             
@@ -132,7 +133,7 @@
                                                             }
                                                             
                                                             .src {
-                                                                margin-left: 650px;
+                                                                margin-left: 700px;
                                                                 margin-top: -400px
                                                             }
                                                             
@@ -241,7 +242,7 @@
                                                             
                                                             .card {
                                                                 margin-left: 120px;
-                                                                width: 105%;
+                                                                width: 100%;
                                                                 height: 100%;
                                                                 margin-top: 30px;
                                                             }

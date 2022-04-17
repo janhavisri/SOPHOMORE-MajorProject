@@ -14,17 +14,17 @@
  import app_config from "../../config";
  import { useState } from "react";
     function AddCourse({ setOpenAddCourse }) {
-        // const url = app_config.api_url;
+        const url = app_config.api_url;
         const [hero, setHero] = useState("");
         const [courseFile, setCourseFile] = useState("");
-   const url = app_config.api_url;
+   
  
    const courseform = {
      title: "",
      description: "",
      thumbnail: "",
-     images: "",
-     created: new Date,
+     heroimage: "",
+     created: "",
      valueAddition: "",
 
    };
@@ -53,37 +53,39 @@
       });
   };
 
-//   const uploadheroimage = (event) => {
-//     const formdata = new FormData();
-//     formdata.append("file", event.target.files[0]);
+  const uploadheroimage = (event) => {
+    const formdata = new FormData();
+    formdata.append("file", event.target.files[0]);
 
-//     const reqOptions = {
-//       method: "POST",
-//       body: formdata,
-//     };
-//   };
-//   fetch(url + "util/addfile", reqOptions)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     setHero(event.target.files[0].name);
-//   });
-// const uploadfile = (event) => {
-// const formdata = new FormData();
-// formdata.append("file", event.target.files[0]);
+    const reqOptions = {
+      method: "POST",
+      body: formdata,
+    };
 
-// const reqOptions = {
-//   method: "POST",
-//   body: formdata,
-// };
+    fetch(url + "util/addfile", reqOptions)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setHero(event.target.files[0].name);
+      });
+  };
 
-// fetch(url + "util/createfile", reqOptions)
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     setCourseFile(event.target.files[0].name);
-//   });
-// };
+  const uploadfile = (event) => {
+    const formdata = new FormData();
+    formdata.append("file", event.target.files[0]);
+
+    const reqOptions = {
+      method: "POST",
+      body: formdata,
+    };
+
+    fetch(url + "util/createfile", reqOptions)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setCourseFile(event.target.files[0].name);
+      });
+  };
 
    return (
      
@@ -100,7 +102,7 @@
          },
        }}
      >
-   <Paper elevation={8} >
+   <Paper elevation={0} >
    <Formik initialValues={courseform} onSubmit={formSubmit}>
                  {({ values, handleChange, handleSubmit }) => (
                    <form onSubmit={handleSubmit}>
@@ -137,7 +139,7 @@
                ></TextField>
                 <input
               
-                  // onChange={uploadheroimage}
+                  onChange={uploadheroimage}
                   type="file"
                   className="form-control mt-4 mx-0"
                   title="Select heroimage"
@@ -156,14 +158,15 @@
                   variant="filled"
                   id="valueaddition"
                   onChange={handleChange}
-                  value={values.valueaddition}
-               required ></TextField>
+                  value={values.valueAddition}
+                ></TextField>
                 
              <Button
+             
+             fullWidth
                type="submit"
                variant="contained"
-             id="pp"
-               sx={{  mt: 5, mb: 0,  }}
+               sx={{  mt: 4, mb: 2 }}
              >
                Add
              </Button>
