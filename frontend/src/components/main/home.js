@@ -24,7 +24,7 @@ const Home = () => {
                             <h2 class="my-3">We undertake the responsibility to open these parachutes </h2>
                             <div class="mt-3">
                             <NavLink
-        to="/"
+        to="/main/signup"
         className="openAddCourse btn-get-started"
         onClick={() => {
           setOpenAddCourse(true);
