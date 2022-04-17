@@ -2,7 +2,7 @@ import { Container, Grid } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import app_config from "../../config";
-import "./viewcourses.css";
+import "../stylesheets/viewcourses.css";
 
 
 const ViewCourses = () => {
@@ -13,7 +13,7 @@ const ViewCourses = () => {
 
   useEffect(() => {
     console.log(id);
-    fetch(url + "courses/getbyid/" + id)
+    fetch(url + "course/getbyid/" + id)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

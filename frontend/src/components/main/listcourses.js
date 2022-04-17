@@ -19,7 +19,7 @@ const CoursesDetail = props => {
                 {/* <p className="text-muted">{props.portfolioData.fullname}</p> */}
                 <p className="">{props.coursesData.thumbnail}</p>
 
-                <Button component={Link} to={'/admin/view/' + props.coursesData._id} variant="contained" className="mt-2" color="primary">View </Button>
+                <Button component={Link} to={'/main/view/' + props.coursesData._id} variant="contained" className="mt-2" color="primary">View </Button>
             </CardContent>
         </Card>
     )
