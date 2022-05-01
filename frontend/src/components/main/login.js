@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core';
 // import Signup from '../components/signup';
 import React,{useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const myStyles = makeStyles(() => ({
@@ -22,6 +23,8 @@ const Login=()=>{
 
  const url = app_config.api_url;
  const classes = myStyles();
+
+ const navigate = useNavigate();
  
 
  const loginform = {
@@ -46,7 +49,12 @@ const Login=()=>{
                      })
 
                      sessionStorage.setItem('user', JSON.stringify(data));
-                     window.location.replace('/about');
+                     if(data.isAdmin){
+                        navigate('/admin')
+                    }else{
+                         navigate('/user')
+
+                     }
 
                      return
                  }
@@ -66,7 +74,7 @@ const Login=()=>{
      
      <div className="col-md-4 login " >
          <section class="tier1" id="login">
-         <div className={clsx('card', classes.mycard)} style={{ marginTop: '3rem' }}>
+         <div className={clsx('card', classes.mycard)} style={{ marginTop: '7rem' }}>
              <div className="card-body">
 
                  <div className="col-md-4 mx-auto mt-4">

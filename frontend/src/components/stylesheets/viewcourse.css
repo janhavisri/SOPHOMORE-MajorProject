@@ -86,7 +86,12 @@
         width: 90px;
     }
     
-    .imga {
+    .pl {
+        /* margin-top: -65px; */
+        margin-left: 17%;
+    }
+    
+    .imgaa {
         margin-left: 230px;
         width: 90px;
         margin-top: -190px;

@@ -18,11 +18,7 @@ const Header= (props)=> {
      if (currentUser){
        return(
          <>
-         <li className="nav-item">
-           <Link className="nav-links" to="/addcourses">
-             AddCourses
-           </Link>
-         </li>
+         
          <li className="nav-item">
            <Link className="nav-links" to="/listcourses">
              browse courses

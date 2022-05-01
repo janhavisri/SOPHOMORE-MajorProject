@@ -10,6 +10,6 @@ const schema = new Schema({
     valueAddition: Array
 })
 
-const model = mongoose.model('portfolio', schema);
+const model = mongoose.model('course', schema);
 
 module.exports = model;

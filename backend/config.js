@@ -1,5 +1,5 @@
 const api_config = {
-    db_url: "mongodb+srv://Janhavis830:madan2830@mystorage.pxblk.mongodb.net/mern?retryWrites=true&w=majority",
+    db_url: "mongodb+srv://Janhavis830:madan2830@mystorage.pxblk.mongodb.net/sophomore?retryWrites=true&w=majority",
 
 };
 

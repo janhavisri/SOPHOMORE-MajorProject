@@ -4,30 +4,43 @@ import Signup from "./signup";
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { CoursesContext } from "../../coursesContext";
+import { useNavigate } from 'react-router-dom';
 
 const Header = (props) => {
   const [signupOpen, setSignupOpen] = useState(false);
   const currentUser = sessionStorage.getItem("user");
+  const data = sessionStorage.getItem("isAdmin");
   const [coursesList, setCoursesList, loading, setLoading] =
     useContext(CoursesContext);
+    const navigate = useNavigate();
+    
+    
+    
 
   const logout = () => {
-    sessionStorage.removeItem("user");
-    window.location.replace("./main/login");
+  
+    sessionStorage.setItem('user', JSON.stringify(data));
+    if(data.isAdmin){
+       navigate('/admin')
+   }else{
+        navigate('./main/login')
+   }
+    
   };
 
   const showLoggedIn = () => {
     if (currentUser) {
       return (
         <>
-          <li className="nav-item">
-            <Link className="nav-link" to="../main/addcourse">
-              Add Courses
+                  <li className="nav-item">
+            <Link className="nav-link" to="./main/viewcourse">
+              View Courses
             </Link>
           </li>
+
           {/* <li className="nav-item">
-            <Link className="nav-link" to="/manage">
-              Manage
+            <Link className="nav-link" to="../main/addcourse">
+              Add Courses
             </Link>
           </li> */}
 
@@ -84,6 +97,16 @@ const Header = (props) => {
                 Browse Courses
               </NavLink>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/main/contactus">
+                Contact Us
+              </a>
+            </li>
+            {/* <li class="nav-item">
+              <a class="nav-link" href="/main/viewcourse">
+                View Courses
+              </a>
+            </li> */}
             {showLoggedIn()}
           </ul>
         </div>
@@ -125,6 +148,7 @@ return (
                 Browse Courses
               </a>
             </li>
+           
 
             {showLoggedIn()}
 
